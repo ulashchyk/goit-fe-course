@@ -1,0 +1,25 @@
+
+.menu {
+    text-align: center;
+    }
+
+.menu-item {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: palegoldenrod;
+    color: blue;
+        }
+        
+.menu-item:hover {
+background-color: red;
+        }
+
+.main-article {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    width: 470px;
+    padding: 20px;
+    background-color: yellow;
+}
