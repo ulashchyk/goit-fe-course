@@ -1,0 +1,30 @@
+* {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    outline: 2px solid green;
+}
+
+.logo {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    float: left;
+}
+
+
+.main-menu {
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+    float: right;
+    }
+
+.main-menu li {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
