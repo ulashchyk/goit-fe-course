@@ -28,3 +28,14 @@
     clear: both;
 }
 
+.item-gallery {
+    margin: 250px;
+}
+
+.product-list-item {
+    display: block;
+    width: 255px;
+    height: 322px;
+    float: left;
+}
+
