@@ -11,7 +11,7 @@ body {
     padding-bottom: 80px;
 }
 
-
+/* TOP MENU */
 
 .logo {
     font-family: Roboto, Arial, sans-serif;
@@ -64,6 +64,8 @@ color: rgba(26, 188, 156, 255);
     display: table;
     clear: both;
 }
+
+/* PRODUCT GALLERY */
 
 .section-title {
     font-family: Roboto, Arial, sans-serif;
@@ -164,6 +166,8 @@ color: rgba(26, 188, 156, 255);
 .product-list-item:hover .product-list-item-price {
     background-color: #7fd9c7;
 }
+
+/* NEWS */
 
 .news-list-item {
     width: 350px;
