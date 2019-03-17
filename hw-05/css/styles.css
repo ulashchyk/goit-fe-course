@@ -7,13 +7,15 @@
 body {
     max-width: 1600px;
     margin: 0 auto;
-    padding-top: 35px;
-    padding-bottom: 80px;
-}
+    }
+
+/* HEADER */
 
 .top-menu {
     max-width: 1110px;
-    margin: 0px auto 33px auto;
+    margin: 0px auto;
+    padding-top: 35px;
+    padding-bottom: 33px;
 }
 
 .logo {
@@ -21,8 +23,7 @@ body {
     font-weight: 300;
     font-size: 30px;
     float: left;
-    margin-top: 15px;
-    margin-bottom: 0px;
+    margin: 0px;
     text-transform: uppercase;
 }
 
@@ -33,19 +34,17 @@ body {
 
 
 .site-navigation {
-    width: 467px;
-    margin-top: 25px;
-    margin-bottom: 0px;
+    margin: 0px;
     font-size: 14px;
     font-weight: 700;
     list-style: none;
     text-transform: uppercase;
     float: right;
-    padding: 0px;
 }
 
 .site-navigation li {
     float: left;
+    line-height: 34px;
 }
 
 .site-navigation li:nth-child(-n+5) {
@@ -68,14 +67,14 @@ body {
     clear: both;
 }
 
+/* SLIDER */
+
 .top-slider {
     max-width: 100vw;
     background-size: cover;
     height: 600px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slider-girls.png);
-    /* background-image: ; */
     margin: 0px auto;
-    /* margin-bottom: 105px; */
     position: relative;
 }
 
@@ -116,7 +115,7 @@ body {
     position: absolute;
     top: 50%;
     left: -25%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
 }
 
 .slider-title-wrapper::after {
@@ -133,6 +132,8 @@ body {
     right: -25%;
     transform: translatey(-50%)
 }
+
+/* MAIN */
 
 .section-title,
 .item-gallery {
@@ -218,6 +219,82 @@ body {
     text-align: center;
 }
 
+
+.product-list-item-submenu-wrapper {
+    display: none;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(33, 33, 33, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-list-item-submenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-list-item-popup {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.product-list-item-popup li {
+    float: left;
+}
+
+.product-list-item-popup a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    outline: 1px solid rgba(255, 255, 255, 1);
+}
+
+
+.product-list-item-popup li:nth-child(2) {
+    padding: 0px 8px;
+}
+
+.product-list-item-popup li:nth-child(1) a {
+    background-image: url(../img/heart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 7px;
+}
+
+.product-list-item-popup li:nth-child(2) a {
+    background-image: url(../img/shuffle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-list-item-popup li:nth-child(3) a {
+    background-image: url(../img/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-list-item-popup li:nth-child(4) a {
+    width: 166px;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 50px;
+    text-align: center;
+    background-image: url(../img/cart.png);
+    background-repeat: no-repeat;
+    background-position: 11px, 13px;
+    background-color: rgb(50, 50, 50);
+}
+
 .product-list-item:hover .product-list-item-name {
     background-color: #1abc9c;
 }
@@ -226,13 +303,28 @@ body {
     background-color: #7fd9c7;
 }
 
-.product-list-item-menu-wrapper {
-    width: 245px;
-    height: 272px;
-    background-color: #212121;
-    opacity: 0.5;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.product-list-item:hover .product-list-item-submenu-wrapper {
+    display: block;
+}
+
+.product-list-item:hover .product-list-item-popup {
+    opacity: 1;
+}
+
+.product-list-item-popup a:hover {
+    background-color: #7fd9c7;
+    outline: none;
+}
+
+.page-footer {
+    background-color: #323232;
+    text-align: center;
+    line-height: 88px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.page-footer span::after {
+    content: " ThemenGraph";
+    color: #7fd9c7;
 }
