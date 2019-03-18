@@ -1,0 +1,382 @@
+* {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    /* outline: 2px solid green; */
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+
+
+.top-menu {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 28px;
+    align-items: baseline;
+    margin-bottom: 113px;
+}
+
+.logo {
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px;
+    color: rgb(149, 225, 211);
+}
+
+.site-navigation {
+    display: flex;
+    flex-basis: 490px;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.site-navigation li {
+    height: 25px;
+}
+
+.site-navigation a {
+    text-decoration: none;
+    color: rgb(149, 225, 211);
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+
+.site-navigation li:hover {
+    border-bottom: 3px solid rgb(243, 129, 129);
+    transition: all 200ms linear;
+}
+
+.site-navigation li:hover>a {
+    color: rgb(243, 129, 129);
+    transition: all 200ms linear;
+}
+
+
+/* MAIN */
+
+.services {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+
+
+/* SECTION TITLE */
+
+
+
+.section-title {
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.features-title::before {
+    content: "We work with";
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    color: rgba(51, 51, 51, 255);
+    display: block;
+    margin: 0px auto 22px;
+    text-transform: none;
+}
+
+.team-title::before {
+    content: "Who we are";
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    color: rgba(51, 51, 51, 255);
+    display: block;
+    margin: 0px auto 22px;
+    text-transform: none;
+}
+
+.features-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    margin: 42px auto 66px;
+}
+
+.team-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    margin: 42px auto 46px;
+}
+
+
+
+/* FEATURES LIST */
+
+.features-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.features-list-item {
+    flex-basis: 310px;
+    list-style: none;
+    position: relative;
+}
+
+.features-list-item p {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(153, 153, 153, 255);
+}
+
+.feature-type {
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 255);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-clock::before {
+    content: url(../img/clock.png);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: -28px;
+    transform: translateX(-100%);
+}
+
+.icon-graph::before {
+    content: url(../img/graph.png);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: -28px;
+    transform: translateX(-100%);
+}
+
+.icon-computer::before {
+    content: url(../img/computer.png);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: -28px;
+    transform: translateX(-100%);
+}
+
+.icon-book::before {
+    content: url(../img/book.png);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: -28px;
+    transform: translateX(-100%);
+}
+
+.icon-home::before {
+    content: url(../img/home.png);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: -28px;
+    transform: translateX(-100%);
+}
+
+.icon-cube::before {
+    content: url(../img/cube.png);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: -28px;
+    transform: translateX(-100%);
+}
+
+.icon-graph {
+}
+
+.icon-computer {
+}
+
+.icon-book {
+}
+
+.icon-computer {
+}
+
+.icon-cube {
+}
+
+
+
+/* ABOUT TEAM */
+.team {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+    }
+
+
+.about-team {
+    margin: 0px auto 90px;
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+    color: rgba(153, 153, 153, 255);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.team-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    width: 380px;
+    height: 470px;
+    background-color: rgb(255, 0, 0);
+    transition: all 200ms linear;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.memberOne {
+    background-image: url(../img/team-member-1.png);
+}
+
+.memberTwo {
+    background-image: url(../img/team-member-2.png);
+}
+
+.memberThree {
+    background-image: url(../img/team-member-3.png);
+}
+
+
+
+.team-list-item:hover>.wrapper {
+    transform: translate(-10px, -10px);
+    transition: all 200ms linear;
+    box-shadow: 10px 10px rgb(149, 225, 211);
+    /* background: linear-gradient(to bottom, #ed8989, #f39980, #f3ab7a, #eebe7b, #e5d183), url(../img/team-member-1.png); */
+}
+
+.team-list-item:hover .social-icons-list {
+    display: flex;
+    transition: all 200ms linear;
+}
+
+.social-icons-list {
+    margin: 0;
+    padding: 0;
+    display: none;
+    list-style: none;
+    justify-content: center;
+}
+
+.social-icons-list a {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: rgb(252, 227, 138);
+}
+
+.social-icons-list li:nth-child(1) a {
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255, 255, 255, 0);
+}
+
+.social-icons-list li:nth-child(2) a {
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255, 255, 255, 0);
+}
+
+.social-icons-list li:nth-child(3) a {
+    background-image: url(../img/pinterest.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255, 255, 255, 0);
+}
+
+.social-icons-list li:nth-child(4) a {
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255, 255, 255, 0);
+}
+
+.social-icons-list li:hover a {
+    background-color: rgb(149, 225, 211);
+    transition: all 200ms linear;
+}
+
+.team-member-name {
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 255);
+    text-align: center;
+}
+
+.team-member-position {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(51, 51, 51, 255);
+    text-align: center;
+    display: block;
+}
+/* FOOTER */
+
+
+.page-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 88px;
+    font-size: 16px;
+    color: rgb(90, 90, 90);
+    border-top: solid 1px #e5e5e5;
+}
+
+.page-footer span::after {
+    content: " Laaqiq";
+    color: rgb(246, 166, 166);
+}
