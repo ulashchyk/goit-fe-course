@@ -128,6 +128,7 @@
 
 .features-list {
     margin: 0;
+    margin-left: 86px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -217,20 +218,15 @@
     transform: translateX(-100%);
 }
 
-.icon-graph {
-}
+.icon-graph {}
 
-.icon-computer {
-}
+.icon-computer {}
 
-.icon-book {
-}
+.icon-book {}
 
-.icon-computer {
-}
+.icon-computer {}
 
-.icon-cube {
-}
+.icon-cube {}
 
 
 
@@ -239,7 +235,7 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 82px;
-    }
+}
 
 
 .about-team {
@@ -286,11 +282,25 @@
 
 
 
-.team-list-item:hover>.wrapper {
+.team-list-item:hover>.memberOne {
     transform: translate(-10px, -10px);
     transition: all 200ms linear;
     box-shadow: 10px 10px rgb(149, 225, 211);
-    /* background: linear-gradient(to bottom, #ed8989, #f39980, #f3ab7a, #eebe7b, #e5d183), url(../img/team-member-1.png); */
+    background-image: linear-gradient(rgba(255, 123, 0, 0.5),rgba(239, 243, 9, 0.5)), url(../img/team-member-1.png);
+}
+
+.team-list-item:hover>.memberTwo {
+    transform: translate(-10px, -10px);
+    transition: all 200ms linear;
+    box-shadow: 10px 10px rgb(149, 225, 211);
+    background-image: linear-gradient(rgba(255, 123, 0, 0.5),rgba(239, 243, 9, 0.5)), url(../img/team-member-2.png);
+}
+
+.team-list-item:hover>.memberThree {
+    transform: translate(-10px, -10px);
+    transition: all 200ms linear;
+    box-shadow: 10px 10px rgb(149, 225, 211);
+    background-image: linear-gradient(rgba(255, 123, 0, 0.5),rgba(239, 243, 9, 0.5)), url(../img/team-member-3.png);
 }
 
 .team-list-item:hover .social-icons-list {
@@ -364,16 +374,22 @@
     text-align: center;
     display: block;
 }
+
 /* FOOTER */
 
-
-.page-footer {
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between; 
     max-width: 1200px;
     margin: 0 auto;
-    line-height: 88px;
+    align-items: center;
+    border-top: solid 1px #e5e5e5;
+}
+.page-footer {
+        line-height: 88px;
     font-size: 16px;
     color: rgb(90, 90, 90);
-    border-top: solid 1px #e5e5e5;
+    
 }
 
 .page-footer span::after {
