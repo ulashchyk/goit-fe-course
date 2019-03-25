@@ -1,0 +1,255 @@
+* {
+    /* outline: 1px solid green; */
+    box-sizing: border-box;
+}
+
+/* aguafina-script-regular - latin */
+@font-face {
+    font-family: 'Aguafina Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Aguafina Script Regular'), local('AguafinaScript-Regular'),
+         url('../fonts/aguafina-script-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/aguafina-script-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('../fonts/roboto-slab-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-slab-700 - latin */
+  @font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'),
+         url('../fonts/roboto-slab-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v8-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+body {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 100%;
+    margin-bottom: 120px;
+    padding-top: 44px;
+    padding-left: 16.643%;
+    padding-right: 16.643%;
+}
+
+.site-logo {
+    font-family: 'Aguafina Script', Arial, sans-serif;
+    font-size: 26px;
+    color: rgb(254, 225, 141, 1);
+    /* font-style: italic; */
+}
+
+.site-menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 14px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.site-menu-item a {
+    display: block;
+    text-decoration: none;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.site-menu-item a:hover {
+        color: rgb(254, 209, 54);
+}
+
+.site-menu-item {
+    padding-right: 40px;
+}
+
+.site-menu-item:last-child {
+    padding: 0;
+}
+
+
+/* MAIN FEATURES */
+
+.main-features {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    padding-left: 16.643%;
+    padding-right: 16.643%;
+}
+
+.section-title {
+    text-align: center;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(34, 34, 34, 255);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    padding-left: 16.643%;
+    padding-right: 16.643%;
+
+}
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+.section-title::after {
+    content: "Proin iaculis purus consequat sem cure.";
+    display: block;
+    font-family: 'Roboto Slab', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: none;
+    color: rgba(119, 119, 119, 255);
+    padding-top: 20px;
+    margin-bottom: 80px;
+
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+.features-list-item {
+    text-align: center;
+}
+
+.features-list-item p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: color: rgba(119, 119, 119, 255);
+    font-weight: 400;
+}
+
+.features-list-title {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+.icon-basket::before {
+    content: url(../img/icon-basket.png);
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    padding: 14px;
+    border: 2px solid rgb(254, 209, 54);
+    border-radius: 68px;
+}
+
+.icon-laptop::before {
+    content: url(../img/icon-laptop.png);
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    padding: 14px;
+    border: 2px solid rgb(254, 209, 54);
+    border-radius: 68px;
+}
+
+.icon-lock::before {
+    content: url(../img/icon-lock.png);
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    padding: 14px;
+    border: 2px solid rgb(254, 209, 54);
+    border-radius: 68px;
+}
+
+.feedback {
+    padding-top: 110px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 16.643%;
+    padding-right: 16.643%;
+    background-color: rgb(34, 34, 34);
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form input {
+    display: block;
+    width: 455px;
+    height: 50px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form textarea {
+    width: 455px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.submit-wrapper {
+    margin: 0 auto;
+}
