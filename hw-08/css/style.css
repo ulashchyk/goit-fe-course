@@ -1,0 +1,415 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/montserrat-v12-latin/montserrat-v12-latin-regular.eot),
+    url(../fonts/montserrat-v12-latin/montserrat-v12-latin-regular.svg),
+    /* url(../fonts/montserrat-v12-latin/montserrat-v12-latin-regular.ttf), */
+    url(../fonts/montserrat-v12-latin/montserrat-v12-latin-regular.woff),
+    url(../fonts/montserrat-v12-latin/montserrat-v12-latin-regular.woff2);
+    font-style: normal;
+    font-weight: 400;
+}
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/montserrat-v12-latin/montserrat-v12-latin-700.woff),
+    url(../fonts/montserrat-v12-latin/montserrat-v12-latin-700.woff2);
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/roboto-v19-latin/roboto-v19-latin-300.eot),
+    url(../fonts/roboto-v19-latin/roboto-v19-latin-300.svg),
+    url(../fonts/roboto-v19-latin/roboto-v19-latin-300.ttf),
+    url(../fonts/roboto-v19-latin/roboto-v19-latin-300.woff),
+    url(../fonts/roboto-v19-latin/roboto-v19-latin-300.woff2);
+    font-style: normal;
+    font-weight: 300;
+}
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/roboto-v19-latin/roboto-v19-latin-regular.eot),
+    url(../fonts/roboto-v19-latin/roboto-v19-latin-regular.svg),
+    url(../fonts/roboto-v19-latin/roboto-v19-latin-regular.ttf),
+    url(../fonts/roboto-v19-latin/roboto-v19-latin-regular.woff),
+    url(../fonts/roboto-v19-latin/roboto-v19-latin-regular.woff2);
+    font-style: normal;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 0.0625rem solid blue; */
+}
+
+html{
+    font-size: 1rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body{
+    padding-bottom: 3.625rem;
+}
+
+.container{
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+/* header */
+.backgr{
+    background-color: rgba(0, 0, 0, 0.877);
+    margin-bottom: 4.25rem;
+    background-image: url(../img/imgesktop.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 16.9375rem 0 16.9375rem 0;
+    position: relative;
+}
+
+.but{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+}
+
+.clickOne, .clickTwo{
+    color: rgb(255, 255, 255);
+    font-size: 0.875rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.clickOne{
+    margin-right: 1.25rem;
+    border: none;
+    text-transform: capitalize;
+}
+
+.clickTwo{
+    width: 5.625rem;
+    height: 2.25rem;
+    border-radius: 1.125rem;
+    border: 0.125rem solid rgb(255, 255, 255);
+}
+
+.info{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2.375rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+}
+
+.title{
+    font-family: 'Montserrat';
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.1875rem;
+    text-align: center;
+}
+
+.Two{
+    font-family: 'Roboto';
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.884);
+    font-weight: 300;
+    text-align: center;
+    margin: 0 2rem 1.1875rem 2rem;
+}
+
+.clickInfo{
+    width: 17.5rem;
+    padding: 0.875rem 0 0.75rem 0;
+    background-color: rgb(255, 78, 80);
+    border: none;
+    border-radius: 1.3125rem;
+    color: rgb(255, 255, 255);
+    font-size: 0.875rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+}
+
+/* main */
+.title2{
+    font-size: 1.375rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 0.875rem;
+}
+
+.partner{
+    margin-bottom: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+ 
+.content{
+    max-width: 61.25%;
+    margin: 0 auto;
+    margin-bottom: 1.8125rem;
+}
+
+.partner:last-child{
+    margin-bottom: 0;
+}
+
+.foto{
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.fotopartner{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    top: 71%;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border: 0.1875rem solid rgb(255, 255, 255);
+    left: 69%;
+    display: inline-block;
+}
+
+.icon1{
+    background-color: rgb(255, 78, 80);
+    background-image: url(../img/Shape_1.png);
+}
+
+.icon2{
+    background-color: rgb(255, 165, 7);
+    background-image: url(../img/Shape_2.png);
+}
+
+.icon3{
+    background-color: rgb(28, 215, 173);
+    background-image: url(../img/Shape_3.png);
+}
+
+.icon4{
+    background-color: rgb(78, 115, 219);
+    background-image: url(../img/Shape_4.png);
+}
+
+.name{
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+}
+
+.bio{
+    font-size: 0.875rem;
+    font-family: 'Roboto';
+    color: rgb(102, 102, 102);
+    text-align: center;
+}
+
+.clickpartners{
+    width: 17.5rem;
+    margin-left: 1.125rem;
+    font-size: 0.875rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: rgb(255, 78, 80);
+    border: 0.1875rem solid rgb(255, 78, 80);
+    background-color: transparent;
+    border-radius: 1.5rem;
+    padding-top: 0.875rem;
+    padding-bottom: 0.75rem;
+}
+
+/* styleDesk  */
+@media(min-width: 90rem) {
+    body{
+        padding-bottom: 4.625rem;
+    }
+    .container {
+        max-width: 90rem;
+    }
+    .but{
+        left: 71%;
+        top: 6%;
+    }
+    .logo{
+        left: 23%;
+        top: 6%;
+        transform: translateX(-50%);
+    }
+
+    .info {
+        width: 31.5rem;
+        top: 29%;
+    }
+
+    .title {
+        font-size: 3.25rem;
+        margin-bottom: 2.5rem;
+    }
+    .Two{
+        font-size: 1.5rem;
+        margin-bottom: 2.1875rem;
+    }
+    .clickInfo{
+        width: 14.0625rem;
+        margin-left: 8rem;
+    }
+
+    .content {
+        width: 65.2777777%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+    }
+
+    .partner {
+        width: 12.125rem;
+    }
+    .backgr{
+        margin-bottom: 4.375rem;
+        padding: 21.875rem 0 21.875rem 0;
+    }
+    .title2{
+        margin-bottom: 2.125rem;
+    }
+    .partner{
+        margin-bottom: 0;
+    }
+    .nameorder{
+        order: 1;
+    }
+    .nameorder2{
+        order: 1;
+    }
+    .clickpartners{
+        width: 12rem;
+        margin-left: 39rem;
+    }
+}
+
+/* styleTable */
+@media(min-width: 768px) and (max-width: 1439px) {
+    body {
+        padding-bottom: 40px;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+
+    .but {
+        left: 73%;
+        top: 6%;
+    }
+
+    .logo {
+        left: 20%;
+        top: 6%;
+        transform: translateX(0);
+    }
+
+    .info {
+        width: 503px;
+        top: 29%;
+    }
+
+    .title {
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+
+    .Two {
+        font-size: 24px;
+        margin-bottom: 34px;
+    }
+
+    .clickInfo {
+        width: 226px;
+        margin-left: 128px;
+    }
+
+    .content {
+        width: 59,635416%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .partner {
+        width: 194px;
+    }
+
+    .backgr {
+        margin-bottom: 72px;
+        padding: 350px 0 350px 0;
+    }
+
+    .title2 {
+        margin-bottom: 32px;
+    }
+
+    .partner {
+        margin-bottom: 58px;
+    }
+
+    .partner:nth-child(even) {
+        margin-bottom: 0;
+    }
+
+    .nameorder {
+        order: 1;
+    }
+
+    .nameorder2 {
+        order: 1;
+    }
+
+    .clickpartners {
+        width: 192px;
+        margin-left: 288px;
+    }
+}
